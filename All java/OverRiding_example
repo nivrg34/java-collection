@@ -1,0 +1,27 @@
+// Overriding Example in Java 
+
+class Animal{
+    //Method to be overridden
+    public void sound(){
+    System.out.println("Animal makes a sound");
+    }
+}
+
+class Dog extends Animal{
+    // Overriding the sound method
+    @Override
+    public void sound(){
+    System.out.println("Dog barks");
+    }
+}
+
+
+
+public class OverRiding_example{
+    public static void main(String[] args){
+        Animal myanimal = new Animal();  //Animal reference and object
+        Animal mydog = new Dog();  // Animal reference but Dog object
+    }
+
+
+}
